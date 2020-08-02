@@ -14,7 +14,20 @@ class lpPeople:
 
     lpMoney = 0
 
-    lpBloodVolume = 100
+    lpBloodValue = 100
 
+    def lossMoney(self, money):
+        self.lpMoney = self.lpMoney - money
 
+    def lossBlood(self, blood):
+        if (self.lpBloodValue > blood):
+            self.lpBloodValue = self.lpBloodVaalue - blood
+        else:
+            self.lpBloodValue = 0
+            self.lpSurvive = 0
 
+    def addMoney(self, money):
+        self.lpMoney = self.lpMoney + money
+
+    def addBloodValue(self, blood):
+        self.lpBloodValue = self.lpBloodValue + blood
