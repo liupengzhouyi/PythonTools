@@ -37,7 +37,12 @@ plt.title('B')
 plt.show()
 
 
-information = 'zbcdefg######'
+information = "zbcdeftcfvygbuhinjtfyvgubhirdtygbuhinjtcfyvgubhi" \
+			  "tfyguhijtfyvgubhijtcfyvgubhinjmktryuyuhiebvauhbk" \
+			  "yguhijtfyvgubhijtcfyvgubhinjmktryuyuhiebvauhbkgg" \
+			  "yguhijtfyvgubhijtcfyvgubhinjmktryuyuhiebvauhbkfg" \
+			  "yguhijtfyvgubhijtcfyvgubhinjmktryuyuhiebvauhbkkk" \
+			  "yguhijtfyvgubhijtcfyvgubhinjmktryuyuhiebvauhbkjj######"
 informationII = []
 for char in information:
 	informationII.append(ord(char))
