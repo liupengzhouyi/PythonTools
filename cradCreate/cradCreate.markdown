@@ -8,4 +8,3 @@
 ## Crad item:
  * a image
  * absruct about this image
-
