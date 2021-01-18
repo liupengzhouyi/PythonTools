@@ -14,7 +14,7 @@ class lpFunction:
 
     lpProbabilityOfAttack = 0.2
 
-    def attackToOne(self, lpPeople):
+    def attackToOne(self, lpPeople: lpPeople):
         '''单体攻击'''
         # 被攻击者损失血量
         lpPeople.lpBloodVolume = lpPeople.lpBloodVolume - self.lpAttack
@@ -23,7 +23,7 @@ class lpFunction:
             # 被攻击者死亡
             lpPeople.lpSurvive = 0
 
-    def attackToAll(self, lpPeopleList):
+    def attackToAll(self, lpPeopleList: list):
         '''群体攻击：随机找几个人攻击'''
         numpy.random.shuffle(lpPeopleList)
         longth = len(lpPeopleList) * self.lpProbabilityOfAttack
@@ -39,14 +39,14 @@ class lpFunction:
                 # 被攻击者死亡
                 people.lpSurvive = 0
 
-    def cutLeetToOne(self, lpPeople):
+    def cutLeetToOne(self, lpPeople: lpPeople):
         '''单体割韭菜'''
         # 被割韭菜者损失金钱
         tureTax = lpPeople.lpMoney * self.lpTax
         lpPeople.lpMoney = lpPeople.lpMoney - tureTax
         return tureTax
 
-    def cutLeetToAll(self, lpPeopleList):
+    def cutLeetToAll(self, lpPeopleList: list):
         '''群体割韭菜'''
         tureTax = 0.0
         for lpPeople in lpPeopleList:
