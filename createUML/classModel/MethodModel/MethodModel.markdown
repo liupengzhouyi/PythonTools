@@ -1,0 +1,6 @@
+
+# MethodModel
+
+* name
+* type
+
