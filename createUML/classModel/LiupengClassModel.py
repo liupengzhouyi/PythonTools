@@ -1,5 +1,6 @@
-
 class LiupengClassModel:
+
+    className: str
 
     methodModelList: list
 
